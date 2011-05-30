@@ -1,0 +1,3 @@
+demo amqp app simulating following dataflow:
+
+messageProducer(cron) -> AMQP -> buffer(listener) -> messageConsumer(cron, to emulate delay for waiting groups of messages)
